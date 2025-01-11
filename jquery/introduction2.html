@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p class="class-message">Message 1.</p>
+    <p class="class-message">Message 2.</p>
+
+    <button id="id-message">Click Me</button>
+
+    <script>
+      $("p");
+      $(".class-message");
+      $("#id-message");
+      $(document).ready(function () {
+        $("#id-message").click(function () {
+          $(".class-message").text("Hello, jQuery!");
+        });
+      });
+    </script>
+  </body>
+</html>
