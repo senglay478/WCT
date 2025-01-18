@@ -7,7 +7,6 @@ function createCounter() {
   };
 }
 
-// Create a counter instance
 const counter = createCounter();
 
 console.log(counter());
