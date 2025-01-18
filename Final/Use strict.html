@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Error Handling Demo</title>
+    <title>Use strict</title>
   </head>
   <body>
     <h1>Demo</h1>
@@ -15,7 +15,7 @@
         console.log("Student Name: Poch Senglay");
         let x = 10;
       } catch (error) {
-        console.error(error.message); // Output will be the error message if x is not defined
+        console.error(error.message);
       }
 
       function demo() {
@@ -29,9 +29,9 @@
       demo();
 
       try {
-        eval("var z = 50; delete z;"); // SyntaxError: Cannot delete variable declared with var
+        eval("var z = 50; delete z;");
       } catch (error) {
-        console.error(error.message); // Output: "Cannot delete property 'z' of #<Object>"
+        console.error(error.message);
       }
     </script>
   </body>
